@@ -1,0 +1,815 @@
+html, body {
+	background: #ffffd9;
+	margin: 0;
+}
+/*html5 display rule*/
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary {
+	display: block;
+}
+h1, h2, h3, h4, h5, h6, p , ul , div, span {
+	margin: 0;
+	padding: 0;
+}
+body {
+	border-top: 1em solid #ffbb29;
+	font-family: Tahoma, Geneva, sans-serif;
+	width: 100%;
+	display: table;
+}
+h1, h2, h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 1px 1px 1px #a7a7a7;
+}
+h1 {
+	font-size: 4em;
+	color: #fff;
+	text-align: center;
+}
+h2 {
+	color: #fff;
+	text-align: center;
+}
+h3 {
+	font-size: 1.75em;
+	margin-bottom: .75em;
+	text-align: center;
+}
+p {
+	line-height: 1.5em;
+	padding-bottom: 1em;
+}
+ul {
+	list-style: none;
+}
+a {
+    color: #CF3503;
+    text-decoration: none;
+}
+a:hover {
+	color: #ffbb29;
+}
+hr {
+	height:1px;
+	border-width:0;
+	color:#ffbb29;
+	background-color:#ffbb29;
+	clear: left;
+}
+hr.greyLine {
+	height:2px;
+	border-width:0;
+	background-color:#ccc;
+	clear: left;
+}
+img.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img {
+	border: none;
+}
+.clear {
+	clear: both;
+}
+.floatLeft {
+	float: left;
+	margin-right: .75em;
+}
+.floatRight {
+	float: right;
+	margin-left: .75em;
+}
+.textCenter{
+	text-align: center;
+}
+.textAlignRight {
+	text-align: right;
+}
+
+/************ NAVIGATION ************/
+#header ul {
+	list-style:none;
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/************ BANNER ************/
+#banner {
+	clear: right;
+	background: #ffbb29 url(images/preContent_bkg.jpg) 0 0 repeat-x;
+	height: 138px;
+	padding: 0;
+}
+
+/************ CONTENT CONTAINER ************/
+#content {
+	padding: 1em;
+}
+
+/* pull-out quote */
+.quote {
+	font: italic 1.3em/1.25em "Times New Roman", serif;
+	text-align: center;
+	margin-top: .5em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border-top: 1px solid #ffbb29;
+	border-bottom: 1px solid #ffbb29;
+}
+.quoteName {
+	font-style: normal;
+	font-size: .75em;
+	line-height: 1em;
+	text-align: right;
+	padding-top: .5em;
+}
+
+
+/* index page - registration information */
+#registration {
+	text-align: center;
+}
+#registration table {
+	margin: 0 auto;
+	width: 100%;
+	border-spacing: 0;
+	padding-bottom: 1em;
+}
+.regHeader {
+	font-size: 1.25em;
+}
+.regDates {
+	font-size: .75em;
+}
+.regPricing {
+	font-size: 1.25em;
+	padding-top: .5em;
+	padding-bottom: 1em;
+}
+.regNowActive a {
+	padding: .5em;
+	color: #ffffd9;
+	background: #ffbb29;
+	background: -moz-linear-gradient(bottom,rgba(255,143,11,.8)0%,rgba(255,182,38,0)200%);
+	background: -webkit-linear-gradient(bottom,rgba(255,143,11,.8)0%,rgba(255,182,38,0)200%);
+	background: -o-linear-gradient(bottom,rgba(255,143,11,.8)0%,rgba(255,182,38,0)200%);
+	background: -ms-linear-gradient(bottom,rgba(255,143,11,.8)0%,rgba(255,182,38,0)200%);
+	background: linear-gradient(bottom,rgba(255,143,11,.8)0%,rgba(255,182,38,0)200%);
+	border-radius: 4px;
+	text-shadow: 1px 1px 0 #bbb;
+}
+.regNowActive a:hover {
+	color: #ffe19f;
+}
+.regNowInactive {
+	padding: .5em;
+	color: #a7a7a7;
+	background: #e1e1cd;
+	background: -moz-linear-gradient(bottom,rgba(225,225,205,.8)0%,rgba(233,233,213,0)200%);
+	background: -webkit-linear-gradient(bottom,rgba(225,225,205,.8)0%,rgba(233,233,213,0)200%);
+	background: -o-linear-gradient(bottom,rgba(225,225,205,.8)0%,rgba(233,233,213,0)200%);
+	background: -ms-linear-gradient(bottom,rgba(225,225,205,.8)0%,rgba(233,233,213,0)200%);
+	background: linear-gradient(bottom,rgba(225,225,205,.8)0%,rgba(233,233,213,0)200%);
+	border-radius: 4px;
+	text-shadow: 1px 1px 0 #fff;
+}
+.regNowActive a, .regNowInactive {
+	-moz-box-shadow: 1px 1px 5px -3px #333;
+	-webkit-box-shadow: 1px 1px 5px -3px #333;
+	box-shadow: 1px 1px 5px -3px #333;
+}
+
+
+/* index page - location information */
+#locationInfo {
+	text-align: center;
+	margin-top: .5em;
+}
+#locationInfo img {
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+
+/* index page - city links */
+#cityLinks {
+	text-align: center;
+	margin-top: .5em;
+}
+#cityLinks ul {
+	font-size: 1em;
+}
+/* END OF INDEX PAGE */
+
+/* schedule page */	
+.scheduleDate {
+	font-weight: bold;
+	font-size: 2em;
+	padding: .25em 0 .25em;
+	background: #ffbb29;
+	color: #fff;
+	text-align: center;
+	width: 100%;
+	margin-top: 1em;
+}
+.scheduleDate:first-of-type {
+	margin-top: 0em;
+}
+.scheduleTime {
+	width: 30%;
+	text-align: right;
+	padding-right: 20px;
+	font-size: 1em;
+	float: left;
+	padding-bottom: .25em;
+}
+.scheduleSession {
+	font-size: 1em;
+	float: right;
+	width: 65%;
+	padding-bottom: .25em;
+}
+.scheduleSessionTitles {
+	padding-left: 35%;
+	padding-bottom: 1em;
+}
+.descriptionSessions {
+	text-shadow: 0px 0px 0px;
+	text-align: left;
+	font-size: 1.5em;
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+}
+/*END OF SCHEDULE PAGE */
+
+/* registration page - registration form */
+#photoAgreement {
+	width: 100%;
+	height: 150px;
+	overflow: auto;
+	background: #fff;
+	font-size: .75em;
+	border: 1px solid #7F9DB9;
+	margin-top: .5em;
+	padding: .5em;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.confHeadings {
+	padding-top: 1em;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid #ffbb29;
+}
+.confHeadings:first-of-type {
+	padding-top: 0em;
+}
+.confRegistration {
+	font-weight: bold;
+}
+.confLevel {
+	font-weight: bold;
+	float: left;
+	width: 30%:
+}
+.confPrice {
+	font-weight: bold;
+	float: right;
+	width: 30%:
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+/* END OF REGISTRATION PAGE */
+
+/* location page - image map caption */
+#mapCaption {
+	text-align: center;
+	padding-top: 5em;
+
+}
+#mapCaption h3 {
+	text-shadow: 0px 0px 0px;
+}
+
+/* location page - modified h3 */
+.locationHeaders {
+	font: bold 1.75em Tahoma, Geneva, sans-serif;
+	padding: 1em 0 .2em;
+	text-align: left;
+	border-bottom: 1px solid #ffbb29;
+	text-shadow: 0px 0px 0px;
+}
+
+/* location page - directions */
+.directions {
+	-moz-column-count: 2;
+	-moz-column-gap: 4em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 4em;
+	column-count: 2;
+	column-gap: 4em;
+	padding-top: .75em;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.directions ul {
+	line-height: 1.5em;	
+}
+/* END OF LOCATION PAGE */
+
+/* FAQs page */
+#listOfQuestions {
+	font: italic 1.2em/1.5em Tahoma, Geneva, sans-serif;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ffbb29;
+}
+dt {
+	font: bold italic 1.2em Tahoma, Geneva, sans-serif;
+}
+dd {
+	margin: 0;
+	padding: 0 0 1em 0;
+	line-height: 1.5em;
+}
+/* END OF FAQS PAGE */
+
+/* about page - modified h3 */	
+.aboutHeaders {
+	font: bold 1.25em Tahoma, Geneva, sans-serif;
+	padding-top: 1em;
+	text-align: left;
+	text-shadow: 0px 0px 0px;
+}
+.aboutHeaders:first-of-type {
+	padding-top: 0;
+}
+
+/* about page - "Who Should Attend" list */	
+ul.aboutList {
+	padding-left: 2em;
+	line-height: 1.5em;
+	list-style: disc;
+}
+/* END OF ABOUT PAGE */
+
+
+
+/************ FOOTER ************/
+#footer {
+	width: 100%;
+	background: #949494;
+	border-top: 2px solid #dddddd;
+	margin-top: 1em;
+	clear: left;
+}
+#footerText {
+	padding: 1em .25em 4em;
+	color: #fff;
+	font: normal 1em Georgia, serif;
+	text-align: center;
+}
+#footerText a {
+	color: #fff;
+}
+#footerText a:hover {
+	color: #ffbb29;
+}
+
+
+
+/*mobile styles*/
+@media only screen and (max-width:480px) {
+
+/*disable text sizing on orientation change*/
+html, body, div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, blockquote, address, time, span, em, strong, img, ol, ul, li, figure, canvas, video, th, td, tr {
+	-webkit-text-size-adjust:none;
+}
+.pageWidth {
+	width: 90%;
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 480px;
+
+}
+#header {
+	width: 100%;
+}
+#otcLogo {
+	display: block;
+	margin: 0 auto;
+}
+/************ NAVIGATION ************/
+#header ul {
+	list-style:none;
+	text-align: center;
+}
+#header ul li {
+	display: block;
+	padding: 5% 0;
+	border-top: 1px solid #ffbb29;
+}
+#header ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+#header ul :hover {
+	color: #fff;
+	background: #ffbb29;
+}
+
+/************ MAIN CONTENT ************/	
+#mainContent {
+	width: 100%;
+	padding-right: 15px;
+	padding-bottom: 1.5em;
+
+}
+h1 {
+	font-size: 3.5em;
+}
+h2 {
+	display: none;
+}
+.quote {
+	width: 100%;
+	float: right;
+	margin-bottom: 1em;
+}
+/* index page - location information */
+#locationInfo {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 1em;
+}
+/* index page - city links */
+#cityLinks {
+	width: 100%;
+	text-align: center;
+	border-top: 1px solid #ffbb29;
+	padding-top: 1em;
+}
+/* END OF INDEX PAGE */
+
+/* schedule page */
+.scheduleDate {
+	font-size: 1.25em;
+	margin-top: .5em;
+}
+.scheduleTime {
+	float: right;
+	width: 55%;
+	padding-right: 0;
+	padding-bottom: .5em;
+}
+.scheduleSession {
+	width: 45%;
+	float: left;
+	padding-bottom: .5em;
+}
+.scheduleSessionTitles {
+	padding-left: 0em;
+	padding-bottom: 1.5em;
+	width: 100%;
+}
+/* END OF SCHEDULE PAGE */
+
+/* registration page */
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+ /* END OF REGISTRATION PAGE */
+
+/* location page - directions */
+.directions {
+	-moz-column-count: 1;
+	-moz-column-gap: 0;
+	-webkit-column-count: 1;
+	-webkit-column-gap: 0;
+	column-count: 1;
+	column-gap: 0;
+}
+/* location page - map */
+#mapCOH, #mapHouston, #mapCaption {
+	display: none;
+}
+/* END OF LOCATION PAGE */
+
+/*faq page*/
+#listOfQuestions {
+	padding-top: .5em;
+
+}
+/* END OF FAQS PAGE */
+
+
+/************ SIDEBAR ************/
+#sidebar {
+	width: 100%;
+	border-top: 1px solid #ffbb29;
+	padding-top: 1em;
+	clear: both;
+}
+#sidebar img {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+}
+
+
+
+/*tablet styles*/
+@media only screen and (min-width:481px) and (max-width:800px) {
+
+.pageWidth {
+	width: 90%;
+	margin: 0 auto;
+	min-width: 500px;
+	max-width: 768px;
+}
+#otcLogo {
+	display: block;
+	margin: 0 auto;
+}
+/************ NAVIGATION ************/
+#header ul {
+	list-style:none;
+	margin: 1em 0;
+	padding: 0;
+
+}
+#header ul li {
+	display: inline;
+	padding-left: 5%;
+}
+#header ul li a {
+	color: #000;
+	text-decoration: none;
+}
+#header ul li a:hover {
+	color: #ffbb29;
+	border-bottom: .25em solid #ffbb29;
+	padding-bottom: .5em;
+}
+#header li#current a {
+	color: #ffbb29;
+}
+
+/************ MAIN CONTENT ************/	
+#mainContent {
+	width: 100%;
+	padding-right: 15px;
+	padding-bottom: 1.5em;
+
+}
+h2 {
+	font-size: 2em;
+}
+.quote {
+	width: 30%;
+	float: right;
+}
+/* index page - location information */
+#locationInfo {
+	width: 49%;
+	float: left;
+	text-align: center;
+	margin-top: .5em;
+}
+#locationInfo img {
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+
+/* index page - city links */
+#cityLinks {
+	width: 49%;
+	float: left;
+	text-align: center;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	border-left: 1px solid #ffbb29;
+}
+#cityLinks ul {
+	font-size: 1em;
+}
+/* END OF INDEX PAGE */
+
+/* registration page*/
+form > div > label,
+	legend {
+  	text-align: left;
+}
+/* END OF REGISTRATION PAGE */
+
+/*faqs page*/
+#listOfQuestions {
+	padding-top: 2em;
+	-moz-column-count: 2;
+	-moz-column-gap: 1em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1em;
+	column-count: 2;
+	column-gap: 1em;
+}
+/* END OF FAQS PAGE */
+
+/************ SIDEBAR ************/
+#sidebar {
+	width: 100%;
+	border-top: 1px solid #ffbb29;
+	padding-top: 1em;
+	clear: both;
+}
+#sidebar img {
+	padding-bottom: 1em;
+}
+}
+
+
+
+/*desktop styles*/
+@media only screen and (min-width:801px) {
+
+.pageWidth {
+	width: 90%;
+	margin: 0 auto;
+	min-width: 1024px;
+	max-width: 1280px;
+}
+#otcLogo {
+	float: left;
+
+}
+/************ NAVIGATION ************/
+#header ul {
+	list-style:none;
+	float: right;
+	margin: 3.75em 0 4.75em;
+	padding: 0;
+	font-size: 1.1em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#header ul li {
+	display: inline;
+	padding-left: 1.25em;
+}
+#header ul li a {
+	color: #000;
+	text-decoration: none;
+}
+#header ul li a:hover {
+	color: #ffbb29;
+	border-bottom: .25em solid #ffbb29;
+	padding-bottom: .5em;
+}
+#header li#current a {
+	color: #ffbb29;
+}
+
+/************ MAIN CONTENT ************/	
+
+#mainContent {
+	width: 70%;
+	padding-right: 15px;
+	padding-bottom: 1.5em;
+	float: left;
+}
+h2 {
+	font-size: 2em;
+}
+.quote {
+	width: 30%;
+	float: right;
+}
+/* index page - location information */
+#locationInfo {
+	width: 49%;
+	float: left;
+	text-align: center;
+	margin-top: .5em;
+}
+#locationInfo img {
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+
+/* index page - city links */
+#cityLinks {
+	width: 49%;
+	float: left;
+	text-align: center;
+	margin-top: .5em;
+	border-left: 1px solid #ffbb29;
+}
+#cityLinks ul {
+	font-size: 1em;
+}
+/* END OF INDEX PAGE */
+
+/* registration page */
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+ /* END OF REGISTRATION PAGE */
+
+/*faqs page*/
+#listOfQuestions {
+	padding-top: 2em;
+	-moz-column-count: 2;
+	-moz-column-gap: 1em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1em;
+	column-count: 2;
+	column-gap: 1em;
+}
+/* END OF FAQS PAGE */
+
+/************ SIDEBAR ************/
+#sidebar {
+	width: 25%;
+	padding: 0 0 1em 30px; 
+	float: left;
+	border-left: 1px solid #dadada;
+}
+#sidebar img {
+	margin: 0 auto;
+	padding-bottom: 1em;
+}
+}
