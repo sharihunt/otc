@@ -8,6 +8,10 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
+
+
 <link href="../styles.css" rel="stylesheet" />
 <link rel="shortcut icon" href="../images/favicon.png" />
 </head>
@@ -50,44 +54,32 @@
 	<!-- start of main content -->
 	<section id="mainContent">
 		
-		<!-- only questions, links to answers in the section below -->
-		<p id="listOfQuestions">		
-			<a href="#faqs1">When and where is OTC?</a><br />
-			<a href="#faqs2">How much is registration?</a><br />
-			<a href="#faqs3">What does registration cover?</a><br />
-			<a href="#faqs4">What is OTC's refund policy?</a><br />
-			<a href="#faqs5">What is the schedule for OTC?</a><br />
-			<a href="#faqs6">How can I contact OTC?</a>
-		</p>
-		
 		<!-- start of questions/answers -->
-		<dl>
-			<dt id="faqs1">When and where is OTC?</dt>
-			<dd>October 17-18, 2014<br />
+		<div class="accordion">
+			<h3>When and where is OTC?</h3>
+			<div>October 17-18, 2014<br />
 			Westin Houston - Memorial City<br />
-			<a href="location.html">More Information</a></dd>
+			<a href="location.html">More Information</a></div>
 			
-			<dt id="faqs2">How much is registration?</dt>
-			<dd>Early Bird - $25<br />
+			<h3>How much is registration?</h3>
+			<div>Early Bird - $25<br />
 			Advance Tickets - $50<br />
 			Walk Up - $100<br />
-			<a href="registration.html">Register Now</a></dd>
+			<a href="registration.html">Register Now</a></div>
 			
-			<dt id="faqs3">What does registration cover?</dt>
-			<dd>Light bites will be provided during the Meet &amp; Greet Thursday and Closing Celebration on Friday. Continental breakfast, snacks and lunch will be provided on Saturday.<br />
-			<a href="registration.html">Register Now</a></dd>
+			<h3>What does registration cover?</h3>
+			<div>Light bites will be provided during the Meet &amp; Greet Thursday and Closing Celebration on Friday. Continental breakfast, snacks and lunch will be provided on Saturday.<br />
+			<a href="registration.html">Register Now</a></div>
 			
-			<dt id="faqs4">What is OTC's refund policy?</dt>
-			<dd>OTC registration is non-refundable. If you wish to transfer your registration email a request to <a href="mailto:otconference@aol.com">otconference@aol.com</a> by Wednesday, October 15<sup>th</sup>.</dd>
+			<h3>What is OTC's refund policy?</h3>
+			<div>OTC registration is non-refundable. If you wish to transfer your registration email a request to <a href="mailto:otconference@aol.com">otconference@aol.com</a> by Wednesday, October 15<sup>th</sup>.</div>
 			
-			<dt id="faqs5">What is the schedule for OTC?</dt>
-			<dd>The current schedule can be found on the <a href="schedule.html">Schedule Page</a>.</dd>
+			<h3>What is the schedule for OTC?</h3>
+			<div>The current schedule can be found on the <a href="schedule.html">Schedule Page</a>.</div>
 			
-			<dt id="faqs6">How can I contact OTC?</dt>
-			<dd>3200 Southwest Freeway<br />
-			Houston, TX 77027<br />
-			<a href="mailto:otconference@aol.com">otconference@aol.com</a></dd>
-		</dl>
+			<h3>How can I contact OTC?</h3>
+			<div><a href="mailto:otconference@aol.com">otconference@aol.com</a></div>
+		</div>
 		<!-- end of questions/answers -->
 		
 	</section>
@@ -120,6 +112,10 @@
 	</footer>
 	<!-- end of footer container -->
 	
+	
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="../scripts/schedule.js"></script>
 </body>
 
 

@@ -8,6 +8,9 @@
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" />
+
 <link href="../styles.css" rel="stylesheet" />
 <link rel="shortcut icon" href="../images/favicon.png" />
 </head>
@@ -50,170 +53,158 @@
 	<!-- start of main content -->
 	<section id="mainContent">
 		
-		<form action="#">
+		<form method="get" action="thankyou.htm" id="myform">
 		<h4 class="confHeadings">Contact Information</h4>
-		  <div>
-			<label class="desc" id="title1" for="Field1">First Name</label>
 			<div>
-			  <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+			<label for="FirstName">*First Name</label>
+				<input type="text" name="FirstName" id="FirstName" />
+				<span id="errorFirstName" class="errorText"></span>
+				
 			</div>
-		  </div>
-		  
-		  <div>
-			<label class="desc" id="title2" for="Field2">Last Name</label>
-			<div>
-			  <input id="Field2" name="Field2" type="text" class="field text ln" value="" size="8" tabindex="2">
-			</div>
-		  </div>
 			
-		  <div>
-			<label class="desc" id="title3" for="Field3">Email</label>
 			<div>
-			  <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3"> 
-		   </div>
-		  </div>
-		  
-		  <h4 class="confHeadings">Nonprofit Information</h4>
-		  <div>
-			<label class="desc" id="title4" for="Field4">Nonprofit Name</label>
+			<label for="LastName">*Last Name</label>
+				<input type="text" name="LastName" id="LastName" />
+				<span id="errorLastName" class="errorText"></span>
+			</div>	
+				
 			<div>
-			  <input id="Field4" name="Field4" type="text" spellcheck="false" value="" maxlength="255" tabindex="4"> 
-		   </div>
-		  </div>
-		  
-		  <div>
-			<label class="desc" id="title5" for="Field5">Title/Position</label>
-			<div>
-			  <input id="Field5" name="Field5" type="text" spellcheck="false" value="" maxlength="255" tabindex="5"> 
-		   </div>
-		  </div>
-		  
-		  <h4 class="confHeadings">Billing Information</h4>
-		  <div>
-			<label class="desc" id="title6" for="Field6">Address</label>
-			<div>
-			  <input id="Field6" name="Field6" type="text" spellcheck="false" value="" maxlength="255" tabindex="6"> 
-		   </div>
-		  </div>
-		  
-		  <div>
-			<label class="desc" id="title7" for="Field7">Address Line 2</label>
-			<div>
-			  <input id="Field7" name="Field7" type="text" spellcheck="false" value="" maxlength="255" tabindex="7"> 
-		   </div>
-		  </div>
-		  
-		  <div>
-			<label class="desc" id="title8" for="Field8">City</label>
-			<div>
-			  <input id="Field8" name="Field8" type="text" spellcheck="true" value="" maxlength="255" tabindex="8"> 
-		   </div>
-		  </div>
-		  
-		  <div>
-		  <label class="desc" id="title9" for="Field9">State</label>
-			<div>
-			<select id="Field9" name="Field9" class="field select medium" tabindex="9">
-				<option value="">&nbsp;</option>
-				<option value="AL">AL</option>
-				<option value="AK">AK</option>
-				<option value="AZ">AZ</option>
-				<option value="AR">AR</option>
-				<option value="CA">CA</option>
-				<option value="CO">CO</option>
-				<option value="CT">CT</option>
-				<option value="DE">DE</option>
-				<option value="DC">DC</option>
-				<option value="FL">FL</option>
-				<option value="GA">GA</option>
-				<option value="HI">HI</option>
-				<option value="ID">ID</option>
-				<option value="IL">IL</option>
-				<option value="IN">IN</option>
-				<option value="IA">IA</option>
-				<option value="KS">KS</option>
-				<option value="KY">KY</option>
-				<option value="LA">LA</option>
-				<option value="ME">ME</option>
-				<option value="MD">MD</option>
-				<option value="MA">MA</option>
-				<option value="MI">MI</option>
-				<option value="MN">MN</option>
-				<option value="MS">MS</option>
-				<option value="MO">MO</option>
-				<option value="MT">MT</option>
-				<option value="NE">NE</option>
-				<option value="NV">NV</option>
-				<option value="NH">NH</option>
-				<option value="NJ">NJ</option>
-				<option value="NM">NM</option>
-				<option value="NY">NY</option>
-				<option value="NC">NC</option>
-				<option value="ND">ND</option>
-				<option value="OH">OH</option>
-				<option value="OK">OK</option>
-				<option value="OR">OR</option>
-				<option value="PA">PA</option>
-				<option value="RI">RI</option>
-				<option value="SC">SC</option>
-				<option value="SD">SD</option>
-				<option value="TN">TN</option>
-				<option value="TX">TX</option>
-				<option value="UT">UT</option>
-				<option value="VT">VT</option>
-				<option value="VA">VA</option>
-				<option value="WA">WA</option>
-				<option value="WV">WV</option>
-				<option value="WI">WI</option>
-				<option value="WY">WY</option>
-				<option value="AS">AS</option>
-				<option value="AE">AE</option>
-				<option value="AA">AA</option>
-				<option value="AP">AP</option>
-				<option value="GU">GU</option>
-				<option value="MH">MH</option>
-				<option value="FM">FM</option>
-				<option value="MP">MP</option>
-				<option value="PW">PW</option>
-				<option value="PR">PR</option>
-				<option value="VI">VI</option>
-			</select>
+			<label for="Email">*Email</label>
+				<input type="text" name="Email" id="Email" />
+				<span id="errorEmail" class="errorText"></span>
 			</div>
-		  </div>
-		  
-		  <div>
-			<label class="desc" id="title10" for="Field10">Postal/Zip Code</label>
+
+		 <h4 class="confHeadings">Nonprofit Information</h4>
 			<div>
-			  <input id="Field10" name="Field10" type="text" spellcheck="true" value="" maxlength="255" tabindex="10"> 
-		   </div>
-		  </div>
-		  
-		  <div>
-			<label class="desc" id="title11" for="Field11">Phone</label>
+			<label for="NonprofitName">Nonprofit Name</label>
+				<input type="text" name="NonprofitName" id="NonprofitName" />
+			</div>
+			
 			<div>
-			  <input id="Field11" name="Field11" type="text" spellcheck="true" value="" maxlength="255" tabindex="11"> 
-		   </div>
-		  </div>
+			<label for="TitlePosition">Title/Position</label>
+				<input type="text" name="TitlePosition" id="TitlePosition" />
+			</div>		  
 		  
-		  <h4 class="confHeadings">Conference Information</h4>
-		  <span class="confLevel">Advance Tickets</span> <span class="confPrice">$50</span>
-			<div class="clear"><i>An invoice will be sent to the email provided.</i></div>
-			<div><b>Friday, October 17th</b></div>
+		<h4 class="confHeadings">Billing Information</h4>		  
+			<div>
+			<label for="Address">*Address</label>
+				<input type="text" name="Address" id="Address" />
+				<span id="errorAddress" class="errorText"></span>
+			</div>
+			
+			<div>
+			<label for="AddressTwo">Address Line 2</label>
+				<input type="text" name="AddressTwo" id="AddressTwo" />
+			</div>	
+			
+			<div>			
+			<label for="City">*City</label>
+				<input type="text" name="City" id="City" />
+				<span id="errorCity" class="errorText"></span>
+			</div>
+
+			<div>
+			<label id="State" for="State">*State</label>
+				<select id="StateChoice" name="State">
+					<option value="">&nbsp;</option>
+					<option value="AL">AL</option>
+					<option value="AK">AK</option>
+					<option value="AZ">AZ</option>
+					<option value="AR">AR</option>
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>
+					<option value="DE">DE</option>
+					<option value="DC">DC</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="HI">HI</option>
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="IA">IA</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>
+					<option value="ME">ME</option>
+					<option value="MD">MD</option>
+					<option value="MA">MA</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MS">MS</option>
+					<option value="MO">MO</option>
+					<option value="MT">MT</option>
+					<option value="NE">NE</option>
+					<option value="NV">NV</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>
+					<option value="NY">NY</option>
+					<option value="NC">NC</option>
+					<option value="ND">ND</option>
+					<option value="OH">OH</option>
+					<option value="OK">OK</option>
+					<option value="OR">OR</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VT">VT</option>
+					<option value="VA">VA</option>
+					<option value="WA">WA</option>
+					<option value="WV">WV</option>
+					<option value="WI">WI</option>
+					<option value="WY">WY</option>
+					<option value="AS">AS</option>
+					<option value="AE">AE</option>
+					<option value="AA">AA</option>
+					<option value="AP">AP</option>
+					<option value="GU">GU</option>
+					<option value="MH">MH</option>
+					<option value="FM">FM</option>
+					<option value="MP">MP</option>
+					<option value="PW">PW</option>
+					<option value="PR">PR</option>
+					<option value="VI">VI</option>
+				</select>
+			</div>	
+			
+			<div>			
+			<label for="Zipcode">*Postal/Zip Code</label>
+				<input type="text" name="Zipcode" id="Zipcode" />
+				<span id="errorZipcode" class="errorText"></span>
+			</div>	
+			
+			<div>
+			<label for="Phone">*Phone Number</label>
+				<input type="text" name="Phone" id="Phone" />
+				<span id="errorPhone" class="errorText"></span>
+			</div>
+
+				
+		<h4 class="confHeadings">Conference Information</h4>
+		<span class="confLevel">Advance Tickets</span> <span class="confPrice">$50</span>
+		<div class="clear"><i>An invoice will be sent to the email provided.</i></div>
+		<div><b>Friday, October 17th</b></div>
+
 		  <div>
 			<fieldset>
 			
-			  <legend id="title12" class="desc">
+			  <legend id="meetgreet" class="desc">
 				Attending Meet & Greet?
 			  </legend>
 			  
 			  <div>
-				<input id="radioDefault_12" name="Field12" type="hidden" value="">
+				<input id="meetgreetChoice" name="meetgreetValue" type="hidden" value="">
 				<div>
-					<input id="Field12_0" name="Field12" type="radio" value="Yes" tabindex="12">
-					<label class="choice" for="Field12_0">Yes</label>
+					<input id="meetgreetYes" name="meetgreetValue" type="radio" value="Yes">
+					<label class="choice" for="meetgreetYes">Yes</label>
 				
-					<input id="Field12_1" name="Field12" type="radio" value="No" tabindex="13">
-					<label class="choice" for="Field12_1">No</label>
+					<input id="meetgreetNo" name="meetgreetValue" type="radio" value="No">
+					<label class="choice" for="meetgreetNo">No</label>
 				</div>
 			  </div>
 			</fieldset>
@@ -224,27 +215,27 @@
 		   <div>
 			<fieldset>
 			
-			  <legend id="title13" class="desc">
+			  <legend id="breakfast" class="desc">
 				Attending Breakfast?
 			  </legend>
 			  
 			  <div>
-				<input id="radioDefault_13" name="Field13" type="hidden" value="">
+				<input id="breakfastChoice" name="breakfastValue" type="hidden" value="">
 				<div>
-					<input id="Field13_0" name="Field13" type="radio" value="Yes" tabindex="14">
-					<label class="choice" for="Field13_0">Yes</label>
+					<input id="breakfastYes" name="breakfastValue" type="radio" value="Yes">
+					<label class="choice" for="breakfastYes">Yes</label>
 				
-					<input id="Field13_1" name="Field13" type="radio" value="No" tabindex="15">
-					<label class="choice" for="Field13_1">No</label>
+					<input id="breakfastNo" name="breakfastValue" type="radio" value="No">
+					<label class="choice" for="breakfastNo">No</label>
 				</div>
 			  </div>
 			</fieldset>
 		  </div>
 		  
 		  <div>
-		  <label class="desc" id="title14" for="Field14">Session I</label>
+		  <label class="desc" id="sessionOne" for="sessionOneValue">Session I</label>
 			<div>
-				<select id="Field14" name="Field14" class="field select medium" tabindex="16">
+				<select id="sessionOneValue" name="sessionOneValue" class="field select medium">
 					<option value="blank">&nbsp;</option>
 					<option value="s1a">Two Thumbs &hellip; Sideways</option>
 					<option value="s1b">It Begins with Storytelling</option>
@@ -254,9 +245,9 @@
 		  </div>
 		  
 		  <div>
-		  <label class="desc" id="title15" for="Field15">Session II</label>
+		  <label class="desc" id="sessionTwo" for="sessionTwoValue">Session II</label>
 			<div>
-				<select id="Field15" name="Field15" class="field select medium" tabindex="17">
+				<select id="sessionTwoValue" name="sessionTwoValue" class="field select medium">
 					<option value="blank">&nbsp;</option>
 					<option value="s2a">Board Members&#58; First Volunteers, Most Visible Champions</option>
 					<option value="s2b">Marketing&#58; You Know More Than You Think</option>
@@ -268,27 +259,27 @@
 		  <div>
 			<fieldset>
 			
-			  <legend id="title16" class="desc">
+			  <legend id="lunch" class="desc">
 				Vegetarian Lunch?
 			  </legend>
 			  
 			  <div>
-				<input id="radioDefault_16" name="Field16" type="hidden" value="">
+				<input id="lunchChoice" name="lunchValue" type="hidden" value="">
 				<div>
-					<input id="Field16_0" name="Field16" type="radio" value="Yes" tabindex="18">
-					<label class="choice" for="Field16_0">Yes</label>
+					<input id="lunchYes" name="lunchValue" type="radio" value="Yes">
+					<label class="choice" for="lunchYes">Yes</label>
 				
-					<input id="Field16_1" name="Field16" type="radio" value="No" tabindex="19">
-					<label class="choice" for="Field16_1">No</label>
+					<input id="lunchNo" name="lunchValue" type="radio" value="No">
+					<label class="choice" for="lunchNo">No</label>
 				</div>
 			  </div>
 			</fieldset>
 		  </div>
 		  
 		  <div>
-		  <label class="desc" id="title17" for="Field17">Session III</label>
+		  <label class="desc" id="sessionThree" for="sessionThreeValue">Session III</label>
 			<div>
-				<select id="Field17" name="Field17" class="field select medium" tabindex="20">
+				<select id="sessionThreeValue" name="sessionThreeValue" class="field select medium">
 					<option value="blank">&nbsp;</option>
 					<option value="s3a">Volunteers Are More Than Free Labor</option>
 					<option value="s3b">Others &quot;Out There&quot;</option>
@@ -298,9 +289,9 @@
 		  </div>
 		  
 		  <div>
-		  <label class="desc" id="title18" for="Field18">Session IV</label>
+		  <label class="desc" id="sessionFour" for="sessionFourValue">Session IV</label>
 			<div>
-				<select id="Field18" name="Field18" class="field select medium" tabindex="21">
+				<select id="sessionFourValue" name="sessionFourValue" class="field select medium">
 					<option value="blank">&nbsp;</option>
 					<option value="s4a">Transitioning with Ease</option>
 					<option value="s4b">Little Things Matter</option>
@@ -312,30 +303,30 @@
 		  <div>
 			<fieldset>
 			
-			  <legend id="title19" class="desc">
+			  <legend id="closng" class="desc">
 				Attending Closing?
 			  </legend>
 			  
 			  <div>
-				<input id="radioDefault_19" name="Field19" type="hidden" value="">
+				<input id="closingChoice" name="closingValue" type="hidden" value="">
 				<div>
-					<input id="Field19_0" name="Field19" type="radio" value="Yes" tabindex="22">
-					<label class="choice" for="Field19_0">Yes</label>
+					<input id="closingYes" name="closingValue" type="radio" value="Yes">
+					<label class="choice" for="closingYes">Yes</label>
 				
-					<input id="Field19_1" name="Field19" type="radio" value="No" tabindex="23">
-					<label class="choice" for="Field19_1">No</label>
+					<input id="closingNo" name="closingValue" type="radio" value="No">
+					<label class="choice" for="closingNo">No</label>
 				</div>
 			  </div>
 			</fieldset>
 		  </div>
 			
 		  <div>
-			<label class="desc" id="title20" for="Field20">
+			<label class="desc" id="instructions" for="instructionsValue">
 			 Special Instructions
 			</label>
 		  
 			<div>
-			  <textarea id="Field20" name="Field20" spellcheck="true" rows="10" cols="50" tabindex="24"></textarea>
+			  <textarea id="instructionsValue" name="instructionsValue" spellcheck="true" rows="10" cols="50" tabindex="24"></textarea>
 			</div>
 		  </div>
 		  
@@ -345,6 +336,7 @@
 
 			<p>I acknowledge that photographs or video of me may be edited, copied, exhibited, published or distributed, and I waive any right to inspect or approve the finished product in which photographs or video of me appears.  Additionally, I waive any right to royalties or other compensation arising or related to the use of my image.</p></div>
 		</div>
+		  
 		  
 		<div>
 			<input id="submit" name="submit" type="submit" value="Submit" tabindex="25"> <input type="reset" value="Reset" id="reset" tabindex="26" />
@@ -381,7 +373,11 @@
 		<!-- end of footer -->
 	</footer>
 	<!-- end of footer container -->
-	
+
+
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="../scripts/schedule.js"></script>	
 </body>
 
 
